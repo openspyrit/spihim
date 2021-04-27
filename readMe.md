@@ -14,14 +14,14 @@ The set-up is depicted below and in detail [[ALM2020](https://hal.archives-ouver
 
 ![](setup.jpg)
 ### Mathematical Model
-The setup acquires $`M = \alpha H F`$ where $`F\in\mathbb{R}^{n\times\lambda}`$ represents the sample hypercube, $`H\in\mathbb{R}^{m\times n}`$ the measurement matrix, and $`\alpha`$ is a multiplicative factor that depends on  and the optical density. The measurement matrix contains the patterns that are uploaded onto the DMD. Here, $`m`$ represents the number of patterns, $`n`$ the number of pixels of the patterns, and $`\lambda`$ the number of spectral bins.
+The setup acquires M = α HF where F in **R** <sup>n x λ</sup> represents the sample hypercube, **H** <sup>m x n</sup> the measurement matrix, and α is a multiplicative factor that depends on  and the optical density. The measurement matrix contains the patterns that are uploaded onto the DMD. Here, m represents the number of patterns, n the number of pixels of the patterns, and λ the number of spectral bins.
 
-The multiplicative factor is given by $`\alpha = \phi\, 10^{-OD}\Delta t`$ (in photons), where $`\phi`$ (in photons/s) represents the given light flux, $`OD`$ is neutral optical density and $`\Delta t`$ is the integration time.
+The multiplicative factor is given by α = φ 10<sup>-OD</sup> Δt (in photons), where φ (in photons/s) represents the given light flux, OD is neutral optical density and Δt is the integration time.
 
 ### Hadamard Acquisitions
-We acquire Hadamard patterns that we split into positive and negative parts, which are concatenated in the measurement matrix. Precisely, $`H_m`$ contains the positive parts and $`H_{m+1}`$ the negative parts, such that $`H_m - H_{m+1}`$ is a Hadamard pattern.
+We acquire Hadamard patterns that we split into positive and negative parts, which are concatenated in the measurement matrix. Precisely, H<sub>m</sub> contains the positive parts and H<sub>m+1</sub> the negative parts, such that H<sub>m</sub> - H<sub>m+1</sub> is a Hadamard pattern.
 
-We sequentially upload onto the DMD all of the $`m = 2 \times 4096`$ Hadamard (split) patterns of dimension $`n = 64 \times 64`$ pixels. The patterns can be downloaded here. We acquire different datasets for the same object by selecting different neutral densities $`OD`$ and different integration times $`\Delta t`$.
+We sequentially upload onto the DMD all of the m = 2 x 4096 Hadamard (split) patterns of dimension n = 64 x 64 pixels. The patterns can be downloaded here. We acquire different datasets for the same object by selecting different neutral densities OD and different integration times Δt.
 
 # Summary of the SPIHIM datasets
 The following datasets are provided
@@ -44,7 +44,7 @@ We acquired four samples:
 * A paper sheet with no printing
 * No object, i.e., the illumination LED lamp directly
 
-Filename | $`M`$ | $`\Delta t`$ (ms) | Comment |
+Filename | M | Δt (ms) | Comment |
 |--|--:|--:|--|
 SiemensBW1a_raw.mat | 408 | 4 |  black and white star sector |
 SiemensColor8a_raw.mat | 408 | 32 | color star sector |
@@ -72,7 +72,7 @@ whiteLED1a_raw.mat | 408 | 4 | no object |
 #### 11-Jun-2020 session <a name="11-Jun-2020-session"></a> 
 First, we acquired the LED source directly with no sample
 
-Filename | $`\Delta t`$ (ms) | OD (-)| Comment |
+Filename | Δt (ms) | OD (-)| Comment |
 |--|--:|--:|--|
 noObjectD_1_0.0_raw.mat | 4 | 0.0 | Saturate
 noObjectD_1_0.3_01_raw.mat | 4 | 0.3 | Repeat same measurement 4x to simulate longer $`\Delta t`$ while avoiding saturation
@@ -86,7 +86,7 @@ noObjectD_1_1.3_raw.mat | 4 | 1.3 |
 
 Second, we acquired the [star sector target](https://www.thorlabs.com/thorproduct.cfm?partnumber=R1L1S2P)
 
-Filename | $`\Delta t`$ (ms) | OD (-)| Comment |
+Filename | Δt (ms) | OD (-)| Comment |
 |--|--:|--:|--|
 starSectorD_2_0.0_01_raw.mat | 8 | 0.0 | Repeat same measurement 4x to simulate longer $`\Delta t`$ while avoiding saturation
 starSectorD_2_0.0_02_raw.mat | 8 | 0.0 |
@@ -106,7 +106,7 @@ starSectorD_2_1.3_raw.mat | 8 | 1.3 |
 
 Third, we acquire the [star sector target](https://www.thorlabs.com/thorproduct.cfm?partnumber=R1L1S2P) that was off-centered
 
-Filename | $`\Delta t`$ (ms) | OD (-)| Comment |
+Filename | Δt (ms) | OD (-)| Comment |
 |--|--:|--:|--|
 R1L1S2P_1_0.0_raw.mat | 4 | 0.0 | Shows the 'R1L1S2P' writing
 R1L1S2P_1_0.3_raw.mat | 4 | 0.3 |
@@ -119,7 +119,7 @@ Thorlabs_1_0.6_raw.mat | 4 | 0.6 |
 
 Finally, we acquire images from the STL10 databaset
 
-Filename | $`\Delta t`$ (ms) | OD (-)| Comment |
+Filename | Δt (ms) | OD (-)| Comment |
 |--|--:|--:|--|
 stl10_01_32ms_cp_raw.mat | 32 | 0.0 | horse displayed on my cell phone (cp)
 stl10_01_32ms_ps_raw.mat | 32 | 0.0 | horse printed on a paper sheet (ps)
@@ -129,7 +129,7 @@ stl10_08_32ms_ps_raw.mat | 32 | 0.0 | bird printed on a paper sheet (ps)
 #### 01-Jul-2020 session <a name="01-Jul-2020-session"></a> 
 First, we acquired the LED source directly with no sample. Note that the `noObjectF1` series and the `noObjectF2` series refer to two different positions of the LED lamp.
 
-Filename | $`\Delta t`$ (ms) | OD (-)| Comment |
+Filename | Δt (ms) | OD (-)| Comment |
 |--|--:|--:|--|
 noObjectF1_1_0.3_01_raw.mat | 4 | 0.3 | Repeat same measurement 15x to simulate longer $`\Delta t`$ while avoiding saturation
 noObjectF1_1_0.3_02_raw.mat | 4 | 0.3 |
@@ -162,7 +162,7 @@ noObjectF2_1_0.6_raw.mat | 4 | 0.6 |
 noObjectF2_1_1.0_raw.mat | 4 | 1.0 |
 noObjectF2_1_1.3_raw.mat | 4 | 1.3 |
 
-Filename | $`\Delta t`$ (ms) | OD (-)| Comment |
+Filename | Δt (ms) | OD (-)| Comment |
 |--|--:|--:|--|
 stl10_03_1_0.0_raw.mat | | |
 stl10_05_1.5_0.0_01_raw.mat | | |
@@ -178,7 +178,7 @@ stl10_05_1_0.6_raw.mat | | |
 #### 18-Nov-2020 session <a name="18-Nov-2020-session"></a> 
 Contrary to previous datasets, the DMD frequency is set to 1 kHz and the DMD patterns are 4-bit (see `par.DMD_fr` and `par.bitplane`).
 
-Filename | $`M`$ | $`\Delta t`$ (ms) | Comment |
+Filename | M | $`\Delta t`$ (ms) | Comment |
 |--|--:|--:|--|
 noObject_01ms_raw.mat | 8192 | 1 |  |
 noObject_10ms_raw.mat | 8192 | 10 |  |
