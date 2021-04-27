@@ -14,7 +14,7 @@ The set-up is depicted below and in detail [[ALM2020](https://hal.archives-ouver
 
 ![](setup.jpg)
 ### Mathematical Model
-The setup acquires M = α HF where F in **R** <sup>n x λ</sup> represents the sample hypercube, **H** <sup>m x n</sup> the measurement matrix, and α is a multiplicative factor that depends on  and the optical density. The measurement matrix contains the patterns that are uploaded onto the DMD. Here, m represents the number of patterns, n the number of pixels of the patterns, and λ the number of spectral bins.
+The setup acquires M = α HF where F in **R** <sup>n x λ</sup> represents the sample hypercube, H in **R** <sup>m x n</sup> the measurement matrix, and α is a multiplicative factor that depends on  and the optical density. The measurement matrix contains the patterns that are uploaded onto the DMD. Here, m represents the number of patterns, n the number of pixels of the patterns, and λ the number of spectral bins.
 
 The multiplicative factor is given by α = φ 10<sup>-OD</sup> Δt (in photons), where φ (in photons/s) represents the given light flux, OD is neutral optical density and Δt is the integration time.
 
@@ -75,7 +75,7 @@ First, we acquired the LED source directly with no sample
 Filename | Δt (ms) | OD (-)| Comment |
 |--|--:|--:|--|
 noObjectD_1_0.0_raw.mat | 4 | 0.0 | Saturate
-noObjectD_1_0.3_01_raw.mat | 4 | 0.3 | Repeat same measurement 4x to simulate longer $`\Delta t`$ while avoiding saturation
+noObjectD_1_0.3_01_raw.mat | 4 | 0.3 | Repeat same measurement 4x to simulate longer Δt while avoiding saturation
 noObjectD_1_0.3_02_raw.mat | 4 | 0.3 |
 noObjectD_1_0.3_03_raw.mat | 4 | 0.3 |
 noObjectD_1_0.3_04_raw.mat | 4 | 0.3 |
@@ -88,7 +88,7 @@ Second, we acquired the [star sector target](https://www.thorlabs.com/thorproduc
 
 Filename | Δt (ms) | OD (-)| Comment |
 |--|--:|--:|--|
-starSectorD_2_0.0_01_raw.mat | 8 | 0.0 | Repeat same measurement 4x to simulate longer $`\Delta t`$ while avoiding saturation
+starSectorD_2_0.0_01_raw.mat | 8 | 0.0 | Repeat same measurement 4x to simulate longer Δt while avoiding saturation
 starSectorD_2_0.0_02_raw.mat | 8 | 0.0 |
 starSectorD_2_0.0_03_raw.mat | 8 | 0.0 |
 starSectorD_2_0.0_04_raw.mat | 8 | 0.0 |
@@ -131,7 +131,7 @@ First, we acquired the LED source directly with no sample. Note that the `noObje
 
 Filename | Δt (ms) | OD (-)| Comment |
 |--|--:|--:|--|
-noObjectF1_1_0.3_01_raw.mat | 4 | 0.3 | Repeat same measurement 15x to simulate longer $`\Delta t`$ while avoiding saturation
+noObjectF1_1_0.3_01_raw.mat | 4 | 0.3 | Repeat same measurement 15x to simulate longer Δt while avoiding saturation
 noObjectF1_1_0.3_02_raw.mat | 4 | 0.3 |
 noObjectF1_1_0.3_03_raw.mat | 4 | 0.3 |
 noObjectF1_1_0.3_04_raw.mat | 4 | 0.3 |
@@ -148,7 +148,7 @@ noObjectF1_1_0.3_14_raw.mat | 4 | 0.3 |
 noObjectF1_1_0.3_15_raw.mat | 4 | 0.3 |
 noObjectF1_1_0.3_raw.mat | 4 | 0.3 |
 noObjectF1_1_0.6_raw.mat | 4 | 0.6 |
-noObjectF2_1_0.3_01_raw.mat | 4 | 0.3 | Not the same LED lamp position as in the `noObjectF1` series. We repeat same measurement 9x to simulate longer $`\Delta t`$ while avoiding saturation
+noObjectF2_1_0.3_01_raw.mat | 4 | 0.3 | Not the same LED lamp position as in the `noObjectF1` series. We repeat same measurement 9x to simulate longer Δt while avoiding saturation
 noObjectF2_1_0.3_02_raw.mat | 4 | 0.3 |
 noObjectF2_1_0.3_03_raw.mat | 4 | 0.3 |
 noObjectF2_1_0.3_04_raw.mat | 4 | 0.3 |
@@ -178,7 +178,7 @@ stl10_05_1_0.6_raw.mat | | |
 #### 18-Nov-2020 session <a name="18-Nov-2020-session"></a> 
 Contrary to previous datasets, the DMD frequency is set to 1 kHz and the DMD patterns are 4-bit (see `par.DMD_fr` and `par.bitplane`).
 
-Filename | M | $`\Delta t`$ (ms) | Comment |
+Filename | M | Δt (ms) | Comment |
 |--|--:|--:|--|
 noObject_01ms_raw.mat | 8192 | 1 |  |
 noObject_10ms_raw.mat | 8192 | 10 |  |
