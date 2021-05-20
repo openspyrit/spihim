@@ -21,7 +21,7 @@ The multiplicative factor is given by α = φ 10<sup>-OD</sup> Δt (in photons),
 ### Hadamard Acquisitions
 We acquire Hadamard patterns that we split into positive and negative parts, which are concatenated in the measurement matrix. Precisely, H<sub>m</sub> contains the positive parts and H<sub>m+1</sub> the negative parts, such that H<sub>m</sub> - H<sub>m+1</sub> is a Hadamard pattern.
 
-We sequentially upload onto the DMD all of the m = 2 x 4096 Hadamard (split) patterns of dimension n = 64 x 64 pixels. The patterns can be downloaded here. We acquire different datasets for the same object by selecting different neutral densities OD and different integration times Δt.
+We sequentially upload onto the DMD all of the m = 2 x 4096 Hadamard (split) patterns of dimension n = 64 x 64 pixels. The patterns in PNG format can be downloaded [here](https://www.creatis.insa-lyon.fr/~ducros/Spihim/Hadamard_64x64.zip). We acquire different datasets for the same object by selecting different neutral densities OD and different integration times Δt.
 
 # Summary of the SPIHIM datasets
 The following datasets are provided
@@ -34,7 +34,13 @@ The following datasets are provided
 * 18-Nov-2020 session ([description](#18-Nov-2020-session)).
 [Download zip](https://www.creatis.insa-lyon.fr/~ducros/Spihim/spihim_2020-Nov-18.zip)  
 
-We provide the description of each measurement session in the sections below. We also provide matlab scripts to read and plot the datasets in `./scripts/`.
+We provide the description of each measurement session in the sections below. 
+
+We also provide matlab scripts in `./scripts/`  
+
+* to read, reconstruct and plot the datasets
+
+* to build the forward operator H that maps the image of the sample the onto the measured Hadamard coefficients
 
 # Description of the SPIHIM datasets
 #### 04-Feb-2020 session <a name="04-Feb-2020-session"></a> 
