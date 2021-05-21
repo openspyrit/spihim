@@ -36,19 +36,14 @@ The following datasets are provided
 
 We provide the description of each measurement session in the sections below. 
 
-## Data Reading, Measurement Matrices, and Reconstruction
+# Data Reading, measurement matrix, and reconstruction
 
 Based on [SPIRiT](https://github.com/nducros/SPIRIT), we provide matlab scripts that
 
 * read, reconstruct and plot the datasets (see `./scripts/read_*_.m`)
-
 * build the forward operator H that maps the image of the sample the onto the measured Hadamard coefficients (see `./scripts/build_forward_operator.m`)
 
-  ```matlab
-  m0 = reshape(sum(M,3),[],1);
-  f0 = H'*m0;
-  figure; imagesc(reshape(f0,64,64)); axis image
-  ```
+The (full) Hadamard matrix H in **R** <sup>n x n</sup> can be downloaded [here](https://www.creatis.insa-lyon.fr/~ducros/Spihim/Hadamard_64x64_forward_stl10_unlabeled.mat). It applies to a measurement vector in **R** <sup>n</sup>, where the missing coefficients have been field with zeros. To compute the (reduced) measurement matrix H in **R** <sup>m x n</sup>, see `./scripts/build_forward_operator.m`.
 
 # Description of the SPIHIM datasets
 #### 04-Feb-2020 session <a name="04-Feb-2020-session"></a> 
