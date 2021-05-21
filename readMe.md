@@ -21,7 +21,9 @@ The multiplicative factor is given by α = φ 10<sup>-OD</sup> Δt (in photons),
 ### Hadamard Acquisitions
 We acquire Hadamard patterns that we split into positive and negative parts, which are concatenated in the measurement matrix. Precisely, H<sub>m</sub> contains the positive parts and H<sub>m+1</sub> the negative parts, such that H<sub>m</sub> - H<sub>m+1</sub> is a Hadamard pattern.
 
-We sequentially upload onto the DMD all of the m = 2 x 4096 Hadamard (split) patterns of dimension n = 64 x 64 pixels. The patterns in PNG format can be downloaded [here](https://www.creatis.insa-lyon.fr/~ducros/Spihim/Hadamard_64x64.zip). We acquire different datasets for the same object by selecting different neutral densities OD and different integration times Δt.
+We sequentially upload onto the DMD all of the m = 2 x 4096 Hadamard (split) patterns of dimension n = 64 x 64 pixels. The patterns in PNG format can be downloaded [here](https://www.creatis.insa-lyon.fr/~ducros/Spihim/Hadamard_64x64.zip). 
+
+We acquire different datasets for the same object by selecting different neutral densities OD and different integration times Δt.
 
 # Summary of the SPIHIM datasets
 The following datasets are provided
@@ -44,6 +46,8 @@ Based on [SPIRiT](https://github.com/nducros/SPIRIT), we provide matlab scripts 
 * build the forward operator H that maps the image of the sample the onto the measured Hadamard coefficients (see `./scripts/build_forward_operator.m`)
 
 The (full) Hadamard matrix H in **R** <sup>n x n</sup> can be downloaded [here](https://www.creatis.insa-lyon.fr/~ducros/Spihim/Hadamard_64x64_forward_stl10_unlabeled.mat). It applies to a measurement vector in **R** <sup>n</sup>, where the missing coefficients have been field with zeros. To compute the (reduced) measurement matrix H in **R** <sup>m x n</sup>, see `./scripts/build_forward_operator.m`.
+
+The acquisition is such that the patterns with maximum variance are acquired first. We provide [here](https://www.creatis.insa-lyon.fr/~ducros/Spihim/Hadamard_64x64_cov_stl10_unlabeled.mat) the covariance matrix used to defined the acquisition order ; it was computed on the [STL-10](https://ai.stanford.edu/~acoates/stl10/) image dataset.
 
 # Description of the SPIHIM datasets
 #### 04-Feb-2020 session <a name="04-Feb-2020-session"></a> 
