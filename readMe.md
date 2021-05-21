@@ -36,11 +36,19 @@ The following datasets are provided
 
 We provide the description of each measurement session in the sections below. 
 
-We also provide matlab scripts in `./scripts/`  
+## Data Reading, Measurement Matrices, and Reconstruction
 
-* to read, reconstruct and plot the datasets
+Based on [SPIRiT](https://github.com/nducros/SPIRIT), we provide matlab scripts that
 
-* to build the forward operator H that maps the image of the sample the onto the measured Hadamard coefficients
+* read, reconstruct and plot the datasets (see `./scripts/read_*_.m`)
+
+* build the forward operator H that maps the image of the sample the onto the measured Hadamard coefficients (see `./scripts/build_forward_operator.m`)
+
+  ```matlab
+  m0 = reshape(sum(M,3),[],1);
+  f0 = H'*m0;
+  figure; imagesc(reshape(f0,64,64)); axis image
+  ```
 
 # Description of the SPIHIM datasets
 #### 04-Feb-2020 session <a name="04-Feb-2020-session"></a> 
@@ -194,4 +202,4 @@ variableFilter_01ms_raw.mat | 8192 | 1 | Filter in the image plane |
 variableFilter_10ms_raw.mat | 8192 | 10 | Filter in the image plane|
 variableFilter_B_01ms_raw.mat | 8192 | 1 | Filter in the image plane |
 variableFilter_B_10ms_raw.mat | 8192 | 10 | Filter in the image plane |
-variableFilter_C_10ms_raw.mat | 8192 | 10 | Filter in the image plane |
+variableFilter_C_10ms_raw.mat | 8192 | 10 | Filter in the image plane `|`
