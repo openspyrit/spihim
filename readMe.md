@@ -27,21 +27,11 @@ We acquire different datasets for the same object by selecting different neutral
 
 # Summary of the SPIHIM datasets
 The following datasets are provided
-* 04-Feb-2020 session ([description](#04-Feb-2020-session)).
-  [Download zip](https://www.creatis.insa-lyon.fr/~ducros/Spihim/spihim_2020-Feb-04.zip).
-
-* 11-Jun-2020 session ([description](#11-Jun-2020-session)).
-  [Download zip](https://www.creatis.insa-lyon.fr/~ducros/Spihim/spihim_2020-Jun-11.zip).
-
-* 01-Jul-2020 session ([description](#01-Jul-2020-session)).
-  [Download zip](https://www.creatis.insa-lyon.fr/~ducros/Spihim/spihim_2020-Jul-01.zip)
-
-* 18-Nov-2020 session ([description](#18-Nov-2020-session)).
-  [Download zip](https://www.creatis.insa-lyon.fr/~ducros/Spihim/spihim_2020-Nov-18.zip)  
-
-* All datasets compatible with SPYRIT deep reconstruction networks (e.g., [Comp-Net](https://github.com/openspyrit/spyritexamples/2020_ISBI_CNet/))
-
-  [Download zip](https://www.creatis.insa-lyon.fr/~ducros/Spihim/spihim_2020_nets.zip)  
+* 04-Feb-2020 session ([description](#04-Feb-2020-session)). [Download zip](https://www.creatis.insa-lyon.fr/~ducros/Spihim/spihim_2020-Feb-04.zip).
+* 11-Jun-2020 session ([description](#11-Jun-2020-session)). [Download zip](https://www.creatis.insa-lyon.fr/~ducros/Spihim/spihim_2020-Jun-11.zip).
+* 01-Jul-2020 session ([description](#01-Jul-2020-session)). [Download zip](https://www.creatis.insa-lyon.fr/~ducros/Spihim/spihim_2020-Jul-01.zip)
+* 18-Nov-2020 session ([description](#18-Nov-2020-session)). [Download zip](https://www.creatis.insa-lyon.fr/~ducros/Spihim/spihim_2020-Nov-18.zip)  
+* All datasets compatible with the SPYRIT deep reconstruction networks (e.g., [Comp-Net](https://github.com/openspyrit/spyrit-examples/tree/master/2021_Optics_express)). [Download zip](https://www.creatis.insa-lyon.fr/~ducros/Spihim/spihim_2020_nets.zip)  
 
 We provide the description of each measurement session in the sections below. 
 
