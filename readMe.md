@@ -1,5 +1,14 @@
 # Single-Pixel Hyperspectral Imaging (SPIHIM) Datasets
-We provide several datasets that we acquire with a computational hyperspectral imager.
+
+# Version 1.0 and later
+
+Our datasets are made publicly available following FAIR (findability, accessibility, interoperability, reusability) principles through the pilot warehouse
+* https://pilot-warehouse.creatis.insa-lyon.fr/#collection/6140ba6929e3fc10d47dbe3e
+
+*Reference:*
+* G. Beneti-Martin, L Mahieu-Williame, T Baudier, N Ducros, "OpenSpyrit: an Ecosystem for Reproducible Single-Pixel Hyperspectral Imaging," Optics Express, Vol. 31, No. 10, (2023). [DOI](https://doi.org/10.1364/OE.483937). [Main PDF](https://hal.science/hal-03910077). [Supplemental document](https://hal.science/hal-03910077v1/file/revised%20%281%29.pdf).
+
+# Version 0
 
 *License:* The SPIHIM datasets are distributed under the Creative Commons Attribution 4.0 International license ([CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/))
 
@@ -8,7 +17,7 @@ We provide several datasets that we acquire with a computational hyperspectral i
 
 *Contact:* nicolas.ducros@insa-lyon.fr, CREATIS Laboratory, University of Lyon, France.
 
-# Setup Description
+## Setup Description
 ### Hardware
 The set-up is depicted below and in detail [[ALM2020](https://hal.archives-ouvertes.fr/hal-02547800/document)]. The telecentric lens (TL; Edmund Optics 62901) is positioned such that its image side projects the image of the sample (S) onto the digital micro-mirror device (DMD; vialux V-7001), which is positioned at the object side of the lens. The object is transparent and is illuminated by a LED lamp (L; Thorlabs LIUCWHA/M00441662). The DMD can implement different light patterns by reflection of the incident light onto a relay lens (RL), which projects the light into an optical fiber (OF; Thorlabs FT1500UMT 0.39NA). This optical fiber is connected to a compact spectrometer (SM; BWTek examplar BRC115P-V-ST1). A filter wheel (FW) containing neutral optical densities is placed behind the lamp to reduce the light flux
 
@@ -25,7 +34,7 @@ We sequentially upload onto the DMD all of the m = 2 x 4096 Hadamard (split) pat
 
 We acquire different datasets for the same object by selecting different neutral densities OD and different integration times Δt.
 
-# Summary of the SPIHIM datasets
+## Summary of the SPIHIM datasets
 The following datasets are provided
 * 04-Feb-2020 session ([description](#04-Feb-2020-session)). [Download zip](https://www.creatis.insa-lyon.fr/~ducros/Spihim/spihim_2020-Feb-04.zip).
 * 11-Jun-2020 session ([description](#11-Jun-2020-session)). [Download zip](https://www.creatis.insa-lyon.fr/~ducros/Spihim/spihim_2020-Jun-11.zip).
@@ -35,7 +44,7 @@ The following datasets are provided
 
 We provide the description of each measurement session in the sections below. 
 
-# Data Reading, measurement matrix, and reconstruction
+## Data Reading, measurement matrix, and reconstruction
 
 Based on [SPIRiT](https://github.com/nducros/SPIRIT), we provide matlab scripts that
 
@@ -46,7 +55,7 @@ The (full) Hadamard matrix H in **R** <sup>n x n</sup> can be downloaded [here](
 
 The acquisition is such that the patterns with maximum variance are acquired first. We provide [here](https://www.creatis.insa-lyon.fr/~ducros/Spihim/Hadamard_64x64_cov_stl10_unlabeled.mat) the covariance matrix used to defined the acquisition order ; it was computed on the [STL-10](https://ai.stanford.edu/~acoates/stl10/) image dataset.
 
-# Description of the SPIHIM datasets
+## Description of the SPIHIM datasets
 #### 04-Feb-2020 session <a name="04-Feb-2020-session"></a> 
 We acquired four samples:
 * A [star sector target](https://www.thorlabs.com/thorproduct.cfm?partnumber=R1L1S2P) printed on a paper sheet in black an white
